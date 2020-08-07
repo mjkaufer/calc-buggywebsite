@@ -4,8 +4,13 @@
 				<iframe id="f" style="height:65px;width:100%; left:-100px; margin-top:-05px;margin-bottom:-30px;" frameBorder="0" src="http://calc.buggywebsite.com/frame.html"></iframe>
 <p>iframe above</p>
 <script>
-const iframe = document.getElementById('f');
-	iframe.contentWindow.postMessage('alert(window.location.href)');
+	console.log("howdy")
+	setTimeout(() => {
+		const iframe = document.getElementById('f');
+		console.log("Got iframe", iframe)
+		iframe.contentWindow.postMessage('alert(window.location.href)');
+	}, 1000)
+
 
 </script>
 </body>
