@@ -8,7 +8,7 @@
 	setTimeout(() => {
 		const iframe = document.getElementById('f');
 		console.log("Got iframe", iframe)
-		iframe.contentWindow.postMessage('alert(window.location.href)');
+		iframe.contentWindow.postMessage('alert(window.location.href)', '*');
 	}, 1000)
 
 
