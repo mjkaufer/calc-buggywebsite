@@ -5,7 +5,7 @@
 <p>iframe above</p>
 <script>
 const iframe = document.getElementById('f');
-	iframe.postMessage('alert(window.location.href)');
+	iframe.contentWindow.postMessage('alert(window.location.href)');
 
 </script>
 </body>
